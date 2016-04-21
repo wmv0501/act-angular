@@ -1,7 +1,23 @@
 {
   "wordFromCEO": {
+    "title": "<span>Words from Our  </span> CEO",
     "heading": "You've chosen <span class=\"text-muted\">a wonderful, bright and fruitful career.",
     "content": "Are you interested in becoming a skilled CNA? Have you thought about enhancing your skills in caring for your love ones or starting a new career? If so, you've come to the right website. We'll explain the requirements and steps for becoming a CNA then walk you through the necessary requirements and procedures to reach your goal as a qualified CNA",
     "imgSrc": "/resources/images/content/president.png"
+  },
+  "courses": {
+    "title": "<span>Available</span> COURSES & SCHEDULE",
+    "evening": {
+      "heading": "EVENING CNA COURSE",
+      "content": "Are you interested in becoming a skilled CNA? Have you thought about enhancing your skills in caring for your love ones or starting a new career? If so, you've come to the right website. We'll explain the requirements and steps for becoming a CNA then walk you through the necessary requirements and procedures to reach your goal as a qualified CNA"
+    },
+    "weekend": {
+      "heading": "WEEKEND CNA COURSE",
+      "content": "For those who are able to attend classes only on Saturdays, ACT offers a Saturday CNA course. These classes are held in the morning from 8:00 AM to 5:00 PM."
+    },
+    "phlebotomyEkg": {
+      "heading": "PHLEBOTOMY & EKG",
+      "content": "ACT course is approved by the American Phlebotomy Association. Course covers the topics necessary for becoming a proficient Phlebotomist."
+    }
   }
 }
