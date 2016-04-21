@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head th:replace="sections/headTag :: headTag">
+<html>
+<head>
     <title>Advanced CNA Training School</title>
-    <meta name="keywords"
-          content="urbanic, responsive, bootstrap, fluid layout, orange, white, free website template, "/>
+    <meta name="keywords" content="cna, nurse, nursing, assistant, care, hawaii"/>
     <meta name="description" content="Adavenced CNA Training Website"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Google Web Font Embed -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+
           rel='stylesheet' type='text/css'/>
 
     <!-- Bootstrap core CSS -->
-    <link th:href="@{/resources/css/bootstrap.css}" href="resources/css/bootstrap.css" rel='stylesheet'
+    <link href="resources/css/bootstrap.css" rel='stylesheet'
           type='text/css'/>
 
     <!-- Custom styles for this template -->
-    <link th:href="@{/resources/js/colorbox/colorbox.css}" href="resources/js/colorbox/colorbox.css" rel='stylesheet'
+    <link href="resources/js/colorbox/colorbox.css" rel='stylesheet'
           type='text/css'/>
-    <link th:href="@{/resources/css/templatemo_style.css}" href="resources/css/templatemo_style.css" rel='stylesheet'
+    <link href="resources/css/templatemo_style.css" rel='stylesheet'
           type='text/css'/>
-    <link th:href="@{/resources/css/w3school_style.css}" href="resources/css/w3school_style.css" rel='stylesheet'
+    <link href="resources/css/w3school_style.css" rel='stylesheet'
           type='text/css'/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,406 +27,81 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.resources/js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="angular/js/angular.min.js"></script>
+    <script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.js"></script>
+    <script type="text/javascript" src="angular/js/main-app.js"></script>
+    <script type="text/javascript" src="angular/controller/homeController.js"></script>
+
 </head>
 
 
-<body>
+<body ng-controller="IndexController as indexCtrl" ng-app="mainApp">
 
-<div th:include="sections/bodyHeader" th:remove="tag">
+<div>
     <div class="templatemo-top-bar" id="templatemo-top">
         <div class="container">
             <div class="subheader">
                 <div id="contactphone" class="pull-left">
-                    <img th:src="@{/resources/images/phone.png}" src="resources/images/phone.png" alt="phone"/>
-                    808-623-7109
+                    <img src="resources/images/phone.png" alt="phone"/>
+                    {{indexCtrl.webapp.phone}}
                 </div>
                 <div id="email" class="pull-right">
-                    <img th:src="@{/resources/images/email.png}" src="resources/images/email.png" alt="email"/>
-                    lqhhcs@gmail.com
+                    <img src="resources/images/email.png" alt="email"/>
+                    {{indexCtrl.webapp.email}}
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="templatemo-top-menu">
-        <div class="container">
-            <!-- Static navbar -->
-            <div class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="" rel="nofollow"><img
-                                th:src="@{/resources/images/templatemo_logo_wide.png}"
-                                src="resources/images/templatemo_logo_wide.png" alt="logo"/></a>
-                    </div>
-                    <div class="navbar-collapse collapse" id="templatemo-nav-bar">
-                        <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
-                            <li class="active"><a href='index.html'>HOME</a></li>
-                            <li><a href='staff.html'>OUR STAFF</a></li>
-                            <li><a href='schedule.html'>ENROLL</a></li>
-                            <li><a href='event.html'>EVENTS</a></li>
-                            <li><a href='contact.html'>CONTACT</a></li>
-                            <li><a href="site-under-contruction.html">CAREER</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--nav.html here-->
+    <div ng-include="'templates/nav.html'"></div>
 </div>
-
-<div>
-    <!-- Carousel -->
-    <div id="templatemo-carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#templatemo-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#templatemo-carousel" data-slide-to="1"></li>
-            <li data-target="#templatemo-carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>STATE APPROVED TRAINING FACILITY</h1>
-
-                        <p>CHOOSE THE ONE SUITABLE FOR YOU</p>
-
-                        <p><a class="btn btn-lg btn-green" href='schedule.html#cna-evening' role="button"
-                              style="margin: 20px;">CNA Course</a>
-                            <a class="btn btn-lg btn-orange" href='schedule.html#cna-recertification' role="button">CNA
-                                Recertification</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <div class="col-sm-6 col-md-6">
-                            <h1>EVENING CNA COURSE</h1>
-
-                            <p>Evening Classes are held three days per week,Tuesday, Wednesday and Thursday. Classes
-                                begin at 3:00PM and ends at 8:00PM. </p>
-                        </div>
-                        <div class="col-sm-6 col-md-6">
-                            <h1>WEEKEND CNA COURSE</h1>
-
-                            <p>For those who are able to attend classes only on Saturdays, ACT offers a Saturday CNA
-                                course.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>CNA RECERTIFICATION</h1>
-
-                        <p>Offering 100 hours CNA and 24 hours recertification courses.</p>
-
-                        <p><a class="btn btn-lg btn-orange" href="schedule.html#cna-recertification" role="button">Read
-                            More</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#templatemo-carousel" data-slide="prev"><span
-                class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#templatemo-carousel" data-slide="next"><span
-                class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /#templatemo-carousel -->
-</div>
-
-<div class="templatemo-welcome" id="templatemo-welcome">
-    <div class="container">
-        <div class="templatemo-slogan text-center">
-            <span class="txt_darkgrey">Welcome to </span><span class="txt_orange">Advanced Care Training School</span>
-
-            <p class="txt_slogan"><i>Advanced Care Training School(ACT) is a State Approved Training Facility. Certified
-                by the Department of Human Services for teaching Certified Nurse Assistant Training and CNA
-                Recertification. Offering 100 hours CNA and 24 hours recertification courses.
-                Spouse Education and Career Opportunity
-                Approved (SECO), formerly known as MYCAA.</i></p>
-        </div>
-    </div>
-</div>
-
-<div class="templatemo-quote" id="templatemo-about">
-    <div class="container">
-        <div class="row">
-            <div class="container">
-                <div class="feature-grid-head">
-                    <div class="feature-grid-head-top">
-                        <label> </label><span> </span> <label> </label>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <h3><span>Words from Our  </span> CEO</h3>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="row featurette">
-            <div class="col-md-4">
-                    <span class="quote-image-span">
-                        <img class="quote-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500"
-                             th:src="@{/resources/images/content/president.png}"
-                             src='resources/images/content/president.png'/>
-                    </span>
-            </div>
-            <div class="col-md-8">
-                <h2 class="templatemo-quote-heading">You've chosen <span class="text-muted">a wonderful, bright and fruitful career.</span>
-                </h2>
-
-                <p class="lead">Are you interested in becoming a skilled CNA? Have you thought about enhancing your
-                    skills in caring for your love ones or starting a new career? If so, you've come to the right
-                    website. We'll explain the requirements and steps for becoming a CNA then walk you through the
-                    necessary requirements and procedures to reach your goal as a qualified CNA.</p>
-            </div>
-        </div>
-    </div>
-</div><!-- /.templatemo-quote -->
+<div ui-view></div>
 
 
-<div class="container">
-    <div class="feature-grid-head">
-        <div class="feature-grid-head-top">
-            <label> </label><span> </span> <label> </label>
-
-            <div class="clearfix"></div>
-        </div>
-        <h3><span>Available</span> COURSES & SCHEDULE</h3>
-    </div>
-</div>
-<div class="clearfix"></div>
-
-<div class="templatemo-service">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="templatemo-service-item grid_1_of_3">
-                    <div>
-                        <img src="resources/images/evening-inv.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">EVENING CNA COURSE</span>
-                    </div>
-                    <p>Evening Classes are held three days per week,Tuesday, Wednesday and Thursday. Classes begin at
-                        3:00PM and ends at 8:00PM. </p>
-
-                    <div class="text-center">
-                        <a rel="nofollow" href="schedule.html#cna-evening"
-                           class="templatemo-btn-read-more btn btn-white">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="templatemo-service-item grid_2_of_3">
-                    <div>
-                        <img src="resources/images/sat-inv.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">WEEKEND CNA COURSE</span>
-                    </div>
-                    <p>For those who are able to attend classes only on Saturdays, ACT offers a Saturday CNA course.
-                        These classes are held in the morning from 8:00 AM to 5:00 PM. </p>
-
-                    <div class="text-center">
-                        <a rel="nofollow" href="schedule.html#cna-weekend"
-                           class="templatemo-btn-read-more btn btn-white">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="templatemo-service-item grid_3_of_3">
-                    <div>
-                        <img src="resources/images/syringe-inv.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">PHLEBOTOMY & EKG</span>
-                    </div>
-                    <p>ACT course is approved by the American Phlebotomy Association. Course covers the topics necessary
-                        for becoming a proficient Phlebotomist.</p>
-
-                    <div class="text-center">
-                        <a rel="nofollow" href="schedule.html#phlebotomy-ekg"
-                           class="templatemo-btn-read-more btn btn-white">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-                <br class="clearfix"/>
-            </div>
-        </div>
-    </div>
-</div>
+<div ng-include="'templates/footer.html'"></div>
+<script src="resources/js/jquery.min.js" type="text/javascript"></script>
+<script src="resources/js/bootstrap.min.js"
+        type="text/javascript"></script>
+<script type="text/javascript"></script>
+<script src="resources/js/colorbox/jquery.colorbox-min.js"
+        type="text/javascript"></script>
+<script src="resources/js/templatemo_script.js"
+        type="text/javascript"></script>
+<script type="text/javascript">
+            $(document).ready( function() {
 
 
-<div id="templatemo-blog">
-    <div class="container">
-        <div class="row">
-            <div class="feature-grid-head">
-                <div class="feature-grid-head-top">
-                    <label> </label><span> </span> <label> </label>
-
-                    <div class="clearfix"></div>
-                </div>
-                <h3><span>Recent</span> EVENTS</h3>
-            </div>
-            <br class="clearfix"/>
-        </div>
-
-        <div class="center-block responsive-iframe-container  fb-album">
-            <iframe src="//embedsocial.com/facebook_album/album_photos/303517013146462" width="900" height="1500"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <!-- <div class="col-sm-5 col-md-6 blog_post">
-                 <ul class="list-inline">
-                     <li class="col-md-4">
-                         <a href="#">
-                             <img class="img-responsive" th:src="@{/resources/images/blog-image-1.jpg}"
-                                  src="resources/images/blog-image-1.jpg" alt="gallery 1"/>
-                         </a>
-                     </li>
-                     <li class="col-md-8">
-                         <div class="pull-left">
-                             <span class="blog_header">CNA GRADUATION<br/>(August 23, 2014)</span><br/>
-                             <span>Event Date : <span class="txt_orange">August 23, 2014</span></span>
-                         </div>
-                         <div class="pull-right">
-                             <a class="btn btn-orange" href="event/grad-aug-23.html" role="button">View Details</a>
-                         </div>
-                         <div class="clearfix"></div>
-                         <p class="blog_text">
-                             &lt;!&ndash;Aliquam quis rutrum risus, ut condimentum ipsum. Nullam aliquet libero augue, eget auctor felis vulputate id. Proin a enim eu libero ornare malesuada. Sed iaculis fringilla lacinia. Sed laoreet lectus vitae [...]&ndash;&gt;
-                         </p>
-                     </li>
-                 </ul>
-             </div>
-
-             <div class="col-sm-5 col-md-6 blog_post">
-                 <ul class="list-inline">
-                     <li class="col-md-4"><a href="#">
-                         <img class="img-responsive" th:src="@{/resources/images/blog-image-2.jpg}"
-                              src="resources/images/blog-image-2.jpg" alt="gallery 2"/></a>
-                     </li>
-                     <li class="col-md-8">
-                         <div class="pull-left">
-                             <span class="blog_header">Fund Raising for the<br/> 'Caregiver Foundation'</span><br/>
-                             <span>Event Date : <span class="txt_orange">June 21, 2014</span></span>
-
-                         </div>
-                         <div class="pull-right">
-                             <a class="btn btn-orange" href="event/fund-raising-caregiver-foundation.html" role="button">View
-                                 Details</a>
-                         </div>
-                         <div class="clearfix"></div>
-                         <p class="blog_text">
-                             &lt;!&ndash;Morbi imperdiet ipsum sit amet dui pharetra, vulputate porta neque tristique. Quisque id turpis tristique, venenatis erat sit amet, venenatis turpis. Ut tellus ipsum, posuere bibendum [...]&ndash;&gt;
-                         </p>
-                     </li>
-                 </ul>
-             </div>-->
-
-
-        </div>
-    </div>
-</div>
-
-<div th:include="sections/footer" th:remove="tag">
-
-    <div class="templatemo-footer">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-
-                    <div class="footer_container">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/advancedcnatraining">
-                                    <span class="social-icon-fb"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="social-icon-rss"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="social-icon-twitter"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="social-icon-linkedin"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="social-icon-dribbble"></span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="height30"></div>
-                        <a class="btn btn-lg btn-orange" href="#" role="button" id="btn-back-to-top">Back To Top</a>
-
-                        <div class="height30"></div>
-                    </div>
-                    <div class="footer_bottom_content">Copyright © 2014 <a href="#">Advanced CNA Trainig (ACT)</a></div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script th:src="@{/resources/js/jquery.min.js}" src="resources/js/jquery.min.js" type="text/javascript"></script>
-    <script th:src="@{/resources/js/bootstrap.min.js}" src="resources/js/bootstrap.min.js"
-            type="text/javascript"></script>
-    <script th:src="@{/resources/js/stickUp.min.js}" src="resources/js/stickUp.min.js" type="text/javascript"></script>
-    <script th:src="@{/resources/js/colorbox/jquery.colorbox-min.js}" src="resources/js/colorbox/jquery.colorbox-min.js"
-            type="text/javascript"></script>
-    <script th:src="@{/resources/js/templatemo_script.js}" src="resources/js/templatemo_script.js"
-            type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready( function() {
-            $("#flexiselDemo3").flexisel({
-                visibleItems: 5,
-                animationSpeed: 1000,
-                autoPlay: true,
-                autoPlaySpeed: 3000,
-                pauseOnHover: true,
-                enableResponsiveBreakpoints: true,
-                responsiveBreakpoints: {
-                    portrait: {
-                        changePoint:480,
-                        visibleItems: 1
-                    },
-                    landscape: {
-                        changePoint:640,
-                        visibleItems: 2
-                    },
-                    tablet: {
-                        changePoint:768,
-                        visibleItems: 3
+                $("#flexiselDemo3").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint:480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint:640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint:768,
+                            visibleItems: 3
+                        }
                     }
-                }
+                });
+
             });
 
-        });
 
 
 
-    </script>
-    <script type="text/javascript" th:src="@{/resources/images/battery.png}"
-            src="resources/js/jquery.flexisel.js"></script>
-
-
-</div>
-
-
+</script>
+<script type="text/javascript" src="resources/js/jquery.flexisel.js"></script>
 </body>
 </html>
