@@ -84,7 +84,7 @@
 
                         <div class="clearfix"></div>
                     </div>
-                    <h3  ng-bind-html="data.wordFromCEO.title"></h3>
+                    <h3 ng-bind-html="data.wordFromCEO.title"></h3>
                 </div>
             </div>
         </div>
@@ -113,11 +113,11 @@
 
             <div class="clearfix"></div>
         </div>
-        <h3  ng-bind-html="data.courses.title"></h3>
+        <h3 ng-bind-html="data.courses.title"></h3>
     </div>
 </div>
 <div class="clearfix"></div>
-
+<a ui-sref='enroll'>HOME</a>
 <div class="templatemo-service">
     <div class="container">
         <div class="row">
@@ -129,7 +129,7 @@
                     </div>
                     <p ng-bind-html="data.courses.evening.content"></p>
                     <div class="text-center">
-                        <a rel="nofollow" href="schedule.html#cna-evening"
+                        <a rel="nofollow" ui-sref='enroll#cna-evening'
                            class="templatemo-btn-read-more btn btn-white">READ MORE</a>
                     </div>
                     <br class="clearfix"/>
@@ -156,7 +156,8 @@
                 <div class="templatemo-service-item grid_3_of_3">
                     <div>
                         <img src="resources/images/syringe-inv.png" alt="icon"/>
-                        <span class="templatemo-service-item-header" ng-bind-html="data.courses.phlebotomyEkg.heading"></span>
+                        <span class="templatemo-service-item-header"
+                              ng-bind-html="data.courses.phlebotomyEkg.heading"></span>
                     </div>
                     <p ng-bind-html="data.courses.phlebotomyEkg.content"></p>
 
@@ -171,7 +172,6 @@
         </div>
     </div>
 </div>
-
 
 <div id="templatemo-blog">
     <div class="container">
@@ -188,10 +188,8 @@
         </div>
 
         <div class="center-block responsive-iframe-container  fb-album">
-            <iframe src="//embedsocial.com/facebook_album/album_photos/303517013146462" width="900" height="1500"
+            <iframe ng-src="{{data.recentEvents.embedsocialUrl | trustAsResourceUrl}}" width="900" height="1500"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
-
         </div>
     </div>
 </div>
