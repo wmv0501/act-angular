@@ -1,6 +1,6 @@
 <div class="templatemo-welcome" id="templatemo-welcome">
     <div class="container">
-        <div class="templatemo-slogan text-center">
+        <div class="templatemo-slogan text-center" >
             <span class="txt_darkgrey">Our </span><span class="txt_orange">Staff</span>
 
             <p class="txt_slogan">
@@ -32,7 +32,7 @@
         <div class="row row_team_main">
             <div class="col-lg-3 col-md-3 col-sm-6 ">
                 <span class="member-thumb">
-                    <img src="resources/images/content/president.png" class="img-responsive" alt="member 1"/>
+                    <img ng-src="{{data.mainStaff.imgSrc}}" class="img-responsive" alt="member 1"/>
                     <div class="thumb-overlay">
                         <a href="#"><span class="social-icon-fb"></span></a>
                         <a href="#"><span class="social-icon-twitter"></span></a>
@@ -43,9 +43,8 @@
             <div class="col-lg-8 col-md-8 col-sm-6 ">
                 <div class="team-inner">
                     <div class="details">
-                        <h2>Ms. Lourdes Vergara Marcelo, RN, CDN, CM, </h2>
-
-                        <h3 class="title">Administrator, CEO</h3>
+                        <h2>{{data.mainStaff.nameAndTitle}}</h2>
+                        <h3 class="title">{{data.mainStaff.position}}</h3>
 
                         <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
                         <!--incididunt ut labore-->
@@ -57,10 +56,10 @@
             </div>
         </div>
         <ul class="row row_team">
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
+            <li class="col-lg-3 col-md-3 col-sm-6  "  ng-repeat="staff in data.staffs">
                 <div class="text-center">
                     <span class="member-thumb">
-                        <img src="resources/images/staff/staff_001.jpg" class="img-responsive" alt="member 2"/>
+                        <img   ng-src="{{staff.imgSrc}}"  class="img-responsive" alt="{{staff.imgAlt}}"/>
                         <div class="thumb-overlay">
                             <a href="#"><span class="social-icon-fb"></span></a>
                             <a href="#"><span class="social-icon-twitter"></span></a>
@@ -70,9 +69,8 @@
 
                     <div class="team-inner">
                         <div class="details">
-                            <h2>Hieda, Les</h2>
-
-                            <h3 class="title">Operations Manager</h3>
+                            <h2>{{staff.nameAndTitle}}</h2>
+                            <h3 class="title">{{staff.position}}</h3>
 
                             <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
                             <!--incididunt ut labore-->

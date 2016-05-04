@@ -13,7 +13,7 @@
       .state('staff', {
         url: '/staff',
         templateUrl: 'templates/staff.html',
-        controller: 'aboutCtrl'
+        controller: 'staffCtrl'
       })
       .state('enroll', {
         url: '/enroll',
@@ -37,7 +37,10 @@
       })
 
 
-      }])
+      }]).filter('trustAsResourceUrl', ['$sce', function($sce) {
+                    return function(val) {
+                        return $sce.trustAsResourceUrl(val);
+                    }}]);
 
 
     app.controller('IndexController', function(){

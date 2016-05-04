@@ -1,0 +1,26 @@
+{
+  "mainHeading": {
+    "title": " <span class=\"txt_darkgrey\">Our </span><span class=\"txt_orange\">Staff</span>",
+    "content": "Look for schools that have instructors that actually work in the field of care giving. These schools are best suited for teaching the fundamentals of medical and patient care and especially the compassionate aspect of elderly care."
+  },
+  "mainStaff": {
+    "nameAndTitle": "Ms. Lourdes Vergara Marcelo, RN, CDN, CM, ",
+    "position": "Ms. Lourdes Vergara Marcelo, RN, CDN, CM, ",
+    "imgSrc": "/resources/images/content/president.png"
+  },
+  "staffs": [
+    {
+      "nameAndTitle": "Hieda, Les",
+      "position": "Operations Manager",
+      "imgSrc": "resources/images/staff/staff_001.jpg",
+      "imgAlt": "/resources/images/content/president.png"
+    },
+    {
+      "nameAndTitle": "MARCELO, JOSEPH V., RN",
+      "position": "Administrative Assistant & Payroll Specialist",
+      "imgSrc": "resources/images/staff/staff_001.jpg",
+      "imgAlt": "/resources/images/content/president.png"
+    }
+  ]
+}
+
