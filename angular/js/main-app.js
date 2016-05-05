@@ -18,7 +18,7 @@
       .state('enroll', {
         url: '/enroll',
         templateUrl: 'templates/enroll.html',
-        controller: 'aboutCtrl'
+        controller: 'enrollCtrl'
       })
       .state('event', {
         url: '/event',

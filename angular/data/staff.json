@@ -8,18 +8,63 @@
     "position": "Ms. Lourdes Vergara Marcelo, RN, CDN, CM, ",
     "imgSrc": "/resources/images/content/president.png"
   },
-  "staffs": [
+  "staffRows": [
     {
-      "nameAndTitle": "Hieda, Les",
-      "position": "Operations Manager",
-      "imgSrc": "resources/images/staff/staff_001.jpg",
-      "imgAlt": "/resources/images/content/president.png"
+      "staffs": [
+        {
+          "nameAndTitle": "Hieda, Les",
+          "position": "Operations Manager",
+          "imgSrc": "resources/images/staff/staff_001.jpg",
+          "imgAlt": "Hieda, Les",
+          "moreInfo": ""
+        },
+        {
+          "nameAndTitle": "Marcelo, Joseph V., RN",
+          "position": "Administrative Assistant & Payroll Specialist",
+          "imgSrc": "resources/images/staff/staff_002.jpg",
+          "imgAlt": "MARCELO, JOSEPH V., RN",
+          "moreInfo": ""
+        },
+        {
+          "nameAndTitle": "Taclas, Ziza, RN",
+          "position": "Compliance Officer",
+          "imgSrc": "resources/images/staff/staff_003.jpg",
+          "imgAlt": "Taclas, Ziza, RN",
+          "moreInfo": ""
+        },
+        {
+          "nameAndTitle": "Zenaida Gante, RN, BSN",
+          "position": "Director of Educational Services",
+          "imgSrc": "resources/images/staff/staff_004.jpg",
+          "imgAlt": "Zenaida Gante, RN, BSN",
+          "moreInfo": ""
+        }
+      ]
     },
     {
-      "nameAndTitle": "MARCELO, JOSEPH V., RN",
-      "position": "Administrative Assistant & Payroll Specialist",
-      "imgSrc": "resources/images/staff/staff_001.jpg",
-      "imgAlt": "/resources/images/content/president.png"
+      "staffs": [
+        {
+          "nameAndTitle": "Evelyn Hunter, BSE, CNA",
+          "position": "Skills Instructor",
+          "imgSrc": "resources/images/staff/staff_005.jpg",
+          "imgAlt": "Evelyn Hunter, BSE, CNA",
+          "moreInfo": ""
+        },
+        {
+          "nameAndTitle": "Jenny Anne Masiglat, RN, BSN, MSN",
+          "position": "Clinical Instructor",
+          "imgSrc": "resources/images/staff/staff_006.jpg",
+          "imgAlt": "Jenny Anne Masiglat, RN, BSN, MSN",
+          "moreInfo": ""
+        },
+        {
+          "nameAndTitle": "Marilou Ancheta RN,BSN",
+          "position": "Phlebotomy Instructor",
+          "imgSrc": "resources/images/staff/staff_007.jpg",
+          "imgAlt": "Marilou Ancheta RN,BSN",
+          "moreInfo": ""
+        }
+      ]
     }
   ]
 }

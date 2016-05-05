@@ -36,26 +36,15 @@
             <div class="col-lg-8 col-md-8 col-sm-6 ">
                 <div class="team-inner">
                     <div class="details">
-                        <div class="pull-left"><h2>Certified Nursing Assistant (CNA 101-E)</h2></div>
-                        <div class="pull-left"><h3>Course Cost $895.00 + Processing Charge = $35 +Tax $43.82 = Total
-                            $973.82<br/> (Tuition includes C.P.R. and First Aid class.)</h3></div>
+                        <div class="pull-left"><h2>{{data.schedules.evening.courseTitle}}</h2></div>
+                        <div class="pull-left"><h3 ng-bind-html="data.schedules.evening.courseInfoLine1"></h3></div>
                         <div class="clearfix">
                         </div>
-                        <h3>Next course is scheduled on January 26, 2016 (Tuesday).</h3>
-
-                        <h3 class="title"> 3:00PM - 8:00PM | 6 Weeks | 12 Students Class</h3>
-
-
-                        <p class="more">Course length is 90 hours of Class room instructions and 16 hours of Skills
-                            training at Wahiawa General Hospital.<br/>
-                            CNA course is Certified by the State of Hawaii Department of Human Services. <br/>
-                            Pre-requisite: High School education and age 18 and older. TB Clearance<br/>
-                            Graduating students receive a Certificate for completing CNA training. <br/>
-                            Classes are held on Tuesday, Wednesday and Thursday.<br/>
-                            Click on the Application tab to download application.</p>
-
+                        <h3 ng-bind-html="data.schedules.evening.courseInfoLine2"></h3>
+                        <h3 class="title" ng-bind-html="data.schedules.evening.courseInfoLine3"></h3>
+                        <p class="more" ng-bind-html="data.schedules.evening.content"></p>
                         <div class="pull-right">
-                            <a class="btn btn-orange" href="resources/pdf/cna-application-form.pdf" target="_blank">Download
+                            <a class="btn btn-orange" ng-href="{{data.schedules.evening.formDownloadLink}}" target="_blank">Download
                                 Application Form</a>
                         </div>
 
@@ -69,34 +58,23 @@
             <div class="col-lg-3 col-md-3 col-sm-6 ">
                 <div class="schedule-thumb">
                     <img src="resources/images/saturday.png" class="img-responsive" alt="member 1"/>
-
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-6 ">
                 <div class="team-inner">
                     <div class="details">
-                        <div class="pull-left"><h2>Certified Nursing Assistant CNA 101-S)</h2></div>
-                        <div class="pull-left"><h3>Course Cost $895.00 + Processing Charge = $35 +Tax $43.82 = Total
-                            $973.82<br/> (Tuition includes C.P.R. and First Aid class.)</h3></div>
-                        <div class="clearfix"></div>
-                        <h3>Next course is scheduled for February 13, 2016.</h3>
-
-                        <h3 class="title">8:00 AM to 5:00 PM | 10 consecutive weeks </h3>
-
-                        <p class="more">
-                            Course curriculum is identical to course 101-E except classes are held on Saturdays for 10
-                            consecutive weekends. Classes start at 8:00AM and ends at 5:00PM. <br/>
-                            CNA course is certified by the State of Hawaii Department of Human Services. <br/>
-                            Prerequisite - High School education and age 18 and older. TB Clearance<br/>
-                            Graduating students receive a Certificate for completing CNA training. <br/>
-                            Tuition includes C.P.R. and First Aid class.<br/>
-                            Click on the Application tab to download application.
-                        </p>
-
+                        <div class="pull-left"><h2>{{data.schedules.weekend.courseTitle}}</h2></div>
+                        <div class="pull-left"><h3 ng-bind-html="data.schedules.weekend.courseInfoLine1"></h3></div>
+                        <div class="clearfix">
+                        </div>
+                        <h3 ng-bind-html="data.schedules.weekend.courseInfoLine2"></h3>
+                        <h3 class="title" ng-bind-html="data.schedules.weekend.courseInfoLine3"></h3>
+                        <p class="more" ng-bind-html="data.schedules.weekend.content"></p>
                         <div class="pull-right">
-                            <a class="btn btn-orange" href="resources/pdf/cna-application-form.pdf" target="_blank">Download
+                            <a class="btn btn-orange" ng-href="{{data.schedules.weekend.formDownloadLink}}" target="_blank">Download
                                 Application Form</a>
                         </div>
+
                     </div>
                 </div>
             </div>

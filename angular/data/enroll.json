@@ -1,0 +1,25 @@
+{
+  "schedules": {
+    "evening": {
+      "courseTitle": "Certified Nursing Assistant (CNA 101-E)",
+      "courseInfoLine1": "Course Cost $895.00 + Processing Charge = $35 + Tax $43.82 = Total $973.82<br/> (Tuition includes C.P.R. and First Aid class.)",
+      "courseInfoLine2": "Next course is scheduled on January 26, 2016 (Tuesday).",
+      "courseInfoLine3": "3:00PM - 8:00PM | 6 Weeks | 12 Students Class",
+      "content": "Course length is 90 hours of Class room instructions and 16 hours of Skills training at Wahiawa General Hospital.<br/> CNA course is Certified by the State of Hawaii Department of Human Services. <br/> Pre-requisite: High School education and age 18 and older. TB Clearance<br/> Graduating students receive a Certificate for completing CNA training. <br/> Classes are held on Tuesday, Wednesday and Thursday.<br/><br/>Click on the Application tab to download application.",
+      "formDownloadLink": "/resources/pdf/cna-application-form.pdf"
+
+    },
+    "weekend": {
+      "courseTitle": "Certified Nursing Assistant CNA 101-S)",
+      "courseInfoLine1": "Course Cost $895.00 + Processing Charge = $35 + Tax $43.82 = Total $973.82<br/> (Tuition includes C.P.R. and First Aid class.)",
+      "courseInfoLine2": "Next course is scheduled for February 13, 2016.",
+      "courseInfoLine3": "8:00 AM to 5:00 PM | 10 consecutive weeks",
+      "content": "Course curriculum is identical to course 101-E except classes are held on Saturdays for 10 consecutive weekends. Classes start at 8:00AM and ends at 5:00PM. <br/> CNA course is certified by the State of Hawaii Department of Human Services. <br/> Prerequisite - High School education and age 18 and older. TB Clearance<br/> Graduating students receive a Certificate for completing CNA training. <br/> Tuition includes C.P.R. and First Aid class.<br/> Click on the Application tab to download application.",
+      "formDownloadLink": "/resources/pdf/cna-application-form.pdf"
+    }
+  },
+  "recentEvents": {
+    "title": "<span>Recent</span> EVENTS",
+    "embedsocialUrl": "//embedsocial.com/facebook_album/album_photos/303517013146462"
+  }
+}

@@ -1,6 +1,6 @@
 <div class="templatemo-welcome" id="templatemo-welcome">
     <div class="container">
-        <div class="templatemo-slogan text-center" >
+        <div class="templatemo-slogan text-center">
             <span class="txt_darkgrey">Our </span><span class="txt_orange">Staff</span>
 
             <p class="txt_slogan">
@@ -55,201 +55,23 @@
                 </div>
             </div>
         </div>
-        <ul class="row row_team">
-            <li class="col-lg-3 col-md-3 col-sm-6  "  ng-repeat="staff in data.staffs">
+        <ul class="row row_team" ng-repeat="staffRow in data.staffRows">
+            <li class="col-lg-3 col-md-3 col-sm-6" ng-repeat="staff in staffRow.staffs">
                 <div class="text-center">
                     <span class="member-thumb">
-                        <img   ng-src="{{staff.imgSrc}}"  class="img-responsive" alt="{{staff.imgAlt}}"/>
+                        <img ng-src="{{staff.imgSrc}}" class="img-responsive" alt="{{staff.imgAlt}}"/>
                         <div class="thumb-overlay">
                             <a href="#"><span class="social-icon-fb"></span></a>
                             <a href="#"><span class="social-icon-twitter"></span></a>
                             <a href="#"><span class="social-icon-linkedin"></span></a>
                         </div>
                     </span>
-
                     <div class="team-inner">
                         <div class="details">
                             <h2>{{staff.nameAndTitle}}</h2>
                             <h3 class="title">{{staff.position}}</h3>
 
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_002.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="https://www.facebook.com/advancedcnatraining" rel="nofollow"><span
-                                    class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                    </span>
-
-                    <div class="team-inner">
-                        <div class="details">
-                            <h2>Marcelo, Joseph V., RN</h2>
-
-                            <h3 class="title">Administrative Assistant &amp; Payroll Specialist</h3>
-
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_003.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="https://www.facebook.com/advancedcnatraining" rel="nofollow"><span
-                                    class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                    </span>
-
-                    <div class="team-inner">
-                        <div class="details">
-                            <h2>Taclas, Ziza, RN,</h2>
-
-                            <h3 class="title">Compliance Officer </h3>
-
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_004.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="https://www.facebook.com/advancedcnatraining" rel="nofollow"><span
-                                    class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                    </span>
-
-                    <div class="team-inner">
-                        <div class="details">
-                            <h2>Zenaida Gante, RN, BSN,</h2>
-
-                            <h3 class="title">Director of Educational Services</h3>
-
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-
-        <ul class="row row_team">
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_005.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="https://www.facebook.com/advancedcnatraining" rel="nofollow"><span
-                                    class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                        </span>
-                </div>
-                <div class="team-inner">
-                    <div class="details">
-                        <h2>Evelyn Hunter, BSE, CNA,</h2>
-
-                        <h3 class="title">Skills Instructor</h3>
-
-                        <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                        <!--incididunt ut labore-->
-                        <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut-->
-                        <!--aliquip ex ea commodo consequat.</p>-->
-
-                    </div>
-                </div>
-
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_006.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="#"><span class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                     </span>
-
-                    <div class="team-inner">
-                        <div class="details">
-                            <h2>Jenny Anne Masiglat, RN, BSN, MSN</h2>
-
-                            <h3 class="title">Clinical Instructor</h3>
-
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-6 ">
-                <div class="text-center">
-                    <span class="member-thumb">
-                        <img src="resources/images/staff/staff_007.jpg" class="img-responsive" alt="member 2"/>
-                        <div class="thumb-overlay">
-                            <a href="https://www.facebook.com/advancedcnatraining" rel="nofollow"><span
-                                    class="social-icon-fb"></span></a>
-                            <a href="#"><span class="social-icon-twitter"></span></a>
-                            <a href="#"><span class="social-icon-linkedin"></span></a>
-                        </div>
-                    </span>
-
-                    <div class="team-inner">
-                        <div class="details">
-                            <h2>Marilou Ancheta RN,BSN</h2>
-
-                            <h3 class="title">Phlebotomy Instructor</h3>
-
-                            <!--<p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
-                            <!--incididunt ut labore-->
-                            <!--et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi-->
-                            <!--ut-->
-                            <!--aliquip ex ea commodo consequat.</p>-->
+                            <p class="more" ng-bind-html="staff.moreInfo"></p>
 
                         </div>
                     </div>
@@ -258,5 +80,7 @@
 
 
         </ul>
+
+
     </div>
 </div>
