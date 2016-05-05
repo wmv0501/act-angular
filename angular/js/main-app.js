@@ -11,7 +11,7 @@
         controller:  'homeCtrl'
       })
       .state('staff', {
-        url: '/staff',
+        url: '/staffss',
         templateUrl: 'templates/staff.html',
         controller: 'staffCtrl'
       })
@@ -23,7 +23,7 @@
       .state('event', {
         url: '/event',
         templateUrl: 'templates/event.html',
-        controller: 'aboutCtrl'
+        controller: 'eventCtrl'
       })
       .state('contact', {
         url: '/contact',
@@ -35,6 +35,12 @@
         templateUrl: 'templates/site-under-contruction.html',
         controller: 'aboutCtrl'
       })
+       .state('event-detail', {
+                    url: '/event-detail/:eventId',
+                    templateUrl: 'templates/event-detail.html',
+                    controller: 'eventDetailCtrl'
+                  })
+
 
 
       }]).filter('trustAsResourceUrl', ['$sce', function($sce) {
