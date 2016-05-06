@@ -39,18 +39,18 @@
 </head>
 
 
-<body ng-controller="IndexController as indexCtrl" ng-app="mainApp">
+<body ng-controller="IndexController as indexCtrl" ng-app="mainApp">-{{webapp}}-
 <div>
     <div class="templatemo-top-bar" id="templatemo-top">
         <div class="container">
             <div class="subheader">
                 <div id="contactphone" class="pull-left">
                     <img src="resources/images/phone.png" alt="phone"/>
-                    {{indexCtrl.webapp.phone}}
+                    {{webapp.phone}}
                 </div>
                 <div id="email" class="pull-right">
                     <img src="resources/images/email.png" alt="email"/>
-                    {{indexCtrl.webapp.email}}
+                    {{webapp.email}}
                 </div>
             </div>
         </div>

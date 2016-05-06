@@ -6,9 +6,11 @@ angular
         $scope.data = data2;
         });
 
-        $scope.var1 = 'var11233';
+        $scope.var1 = 1;
 
-    }).filter('trustAsResourceUrl', ['$sce', function($sce) {
-           return function(val) {
-               return $sce.trustAsResourceUrl(val);
-           }}]);
+        $scope.clearDiv = function(index){
+            return index%2 == 1;
+        };
+
+
+    })

@@ -49,10 +49,12 @@
                     }}]);
 
 
-    app.controller('IndexController', function(){
-        this.webapp = info;
+    app.controller('IndexController', function($scope){
+        $scope.webapp = info;
+        $scope.menu=2;
+
     })
- var info = {
+    var info = {
         email: 'lqhhcs@gmail.com',
         phone: '808-623-7109'
     };
