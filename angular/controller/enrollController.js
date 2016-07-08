@@ -1,6 +1,7 @@
 angular
     .module('mainApp')
-    .controller('enrollCtrl', function($scope, $http, $sce){
+    .controller('enrollCtrl', function($scope, $http, $sce, $rootScope){
+        $rootScope.menu="enroll";
         $http.get('/angular/data/enroll.json').success (function(data2){
         $scope.data = data2;
         });

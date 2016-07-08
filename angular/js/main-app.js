@@ -38,7 +38,10 @@
        .state('event-detail', {
                     url: '/event-detail/:eventId',
                     templateUrl: 'templates/event-detail.html',
-                    controller: 'eventDetailCtrl'
+                    controller: 'eventDetailCtrl',
+                    data: {
+                                javascript: '/resources/js/colorbox/jquery.colorbox-min.js'
+                              }
                   })
 
 
@@ -49,9 +52,8 @@
                     }}]);
 
 
-    app.controller('IndexController', function($scope){
+    app.controller('IndexController', function($scope,$rootScope){
         $scope.webapp = info;
-        $scope.menu=2;
 
     })
     var info = {

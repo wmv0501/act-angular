@@ -1,6 +1,7 @@
 angular
     .module('mainApp')
-    .controller('homeCtrl', function($scope, $http, $sce){
+    .controller('homeCtrl', function($scope, $http, $sce, $rootScope){
+        $rootScope.menu="home";
         $http.get('/angular/data/home.json').success (function(data2){
         $scope.data = data2;
         });

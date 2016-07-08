@@ -1,6 +1,7 @@
 var top_menu_height = 0;
 jQuery(function($) {
         $(document).ready( function() {
+        alert('wv');
 
             // load google map
         var script = document.createElement('script');
@@ -38,7 +39,7 @@ jQuery(function($) {
 
         // gallery category
         $('.templatemo-gallery-category a').click(function(e){
-            e.preventDefault(); 
+            e.preventDefault();
             $(this).parent().children('a').removeClass('active');
             $(this).addClass('active');
             var linkClass = $(this).attr('href');
@@ -47,7 +48,7 @@ jQuery(function($) {
                    $(this).hide();
                 };
             });
-            $(linkClass).fadeIn();  
+            $(linkClass).fadeIn();
         });
 
         //gallery light box setup
